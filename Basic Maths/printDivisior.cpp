@@ -17,8 +17,4 @@ int main()
             divisiors[count++] = i;
         }
     }
-
-
-
-    
 }
