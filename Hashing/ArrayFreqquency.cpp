@@ -13,6 +13,7 @@ int main()
         cin >> arr[i];
     }
 
+
     // precompute
 
     int hash[13] = {0};
