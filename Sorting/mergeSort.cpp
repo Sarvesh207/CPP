@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void merge(int &arr[], int low, int mid, int high)
+void merge(int arr[], int low, int mid, int high)
 {
     vector<int> temp;
     int left = low;
@@ -41,7 +41,7 @@ void merge(int &arr[], int low, int mid, int high)
     }
 }
 
-void ms(int &arr[], int low, int high)
+void ms(int arr[], int low, int high)
 {
 
     if (low == high)
@@ -49,8 +49,8 @@ void ms(int &arr[], int low, int high)
 
     int mid = (low + high) / 2;
 
-    mS(arr, low, mid);
-    mS(arr, mid + 1, high);
+    ms(arr, low, mid);
+    ms(arr, mid + 1, high);
     merge(arr, low, mid, high);
 }
 int main()
@@ -65,7 +65,7 @@ int main()
         cin >> arr[i];
     }
 
-    mS(arr, 0, n - 1);
+    ms(arr, 0, n - 1);
 
     for (int i = 0; i < n; i++)
     {
