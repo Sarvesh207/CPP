@@ -12,4 +12,4 @@ int reverse(int x) {
             x = x / 10; // Remove the last digit from x
         }
         return ans; // Return the reversed number
-    }
+}
