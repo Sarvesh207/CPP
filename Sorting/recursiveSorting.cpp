@@ -4,7 +4,7 @@ using namespace std;
 
 void recursiveBubbleSort(int arr[], int n)
 {
-    if (n == 1 )
+    if (n == 1)
         return;
 
     for (int i = 0; i < n - 1; i++)
