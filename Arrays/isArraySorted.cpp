@@ -17,6 +17,8 @@ bool isSorted(int arr[], int n)
     return true;
 }
 
+
+
 bool isSortedOptimal(int arr[], int n)
 {
     for (int j = 1; j < n; j++)
