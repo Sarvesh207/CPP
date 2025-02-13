@@ -19,7 +19,7 @@ public:
     }
 };
 
-// Optimal
+// Better
 
 class Solution
 {
@@ -43,3 +43,5 @@ public:
         return {-1, -1};
     }
 };
+
+//  OPtimal
