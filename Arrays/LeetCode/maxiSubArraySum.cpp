@@ -23,3 +23,37 @@ public:
         return maxi;
     }
 };
+
+class Solution
+{
+public:
+    int maxSubArray(vector<int> &nums)
+    {
+
+        if (nums.empty())
+        {
+            return 0; // or whatever the problem specifies
+        }
+        int n = nums.size();
+        int maxi = nums[0];
+
+        for (int i = 0; i < n; i++)
+        {
+            int sum = 0;
+            for (int j = i; j < n; j++)
+            {
+                for (int k = i; k <= j; k++)
+                {
+                    sum += nums[k];
+                }
+
+                if (sum > maxi)
+                {
+                    maxi = max(maxi, sum);
+                }
+            }
+        }
+
+        return maxi;
+    }
+};
