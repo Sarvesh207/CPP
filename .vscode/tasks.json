@@ -2,35 +2,21 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compile and run",
+            "label": "Compile and Run",
             "type": "shell",
-            "command": "",
+            "command": "cmd.exe",
             "args": [
-                "copy",
-                "\"${file}\"",
-                "${workspaceFolder}\\jspwTest.cpp",
-                "&&",
-                "g++",
-                "jspwTest.cpp",
-                "-o",
-                "jspwTest",
-                "&&",
-                "jspwTest",
-                "<",
-                "input.txt",
-                ">",
-                "output.txt",
-                "&&",
-                "del",
-                "jspwTest.exe",
-                "&&",
-                "del",
-                "jspwTest.cpp"
+                "/c",
+                "copy \"${file}\" \"${workspaceFolder}\\jspwTest.cpp\" && g++ jspwTest.cpp -o jspwTest && jspwTest < input.txt > output.txt && del jspwTest.exe && del jspwTest.cpp"
             ],
             "presentation": {
-                "reveal": "never"
+                "reveal": "always",
+                "panel": "shared"
             },
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "problemMatcher": {
                 "owner": "cpp",
                 "fileLocation": [
@@ -48,9 +34,9 @@
             }
         },
         {
+            "label": "Build active file",
             "type": "cppbuild",
-            "label": "C/C++: gcc.exe build active file",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "command": "C:\\MinGW\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",

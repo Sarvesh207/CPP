@@ -49,16 +49,17 @@ void count_freq(int arr[], int n)
 
 int main()
 {
-    int n;
+    // int n;
 
-    cin >> n;
-    int arr[n];
+    // cin >> n;
+    // int arr[n];
 
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> arr[i];
+    // }
 
-    count_freq(arr, n);
+    // count_freq(arr, n);
+    cout << "Hello World" << endl;
     return 0;
 }

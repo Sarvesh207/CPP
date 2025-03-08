@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
@@ -19,7 +20,7 @@ int main()
         n = n / 10;
     }
 
-    cout << sum;
+    cout << sum << " ";
 
     if(n == sum) cout << "Amstrong num";
     else cout << "Not amstrong num";
